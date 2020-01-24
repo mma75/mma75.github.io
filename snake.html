@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>Snake</title>
+    
+    <link rel="stylesheet" href="sources/02-css/snake.css">
+    <link href="https://fonts.googleapis.com/css?family=Sunshiney|Yeon+Sung&display=swap" rel="stylesheet">
+   
+
+</head>
+
+<body>
+    <nav>
+        <img class='img-lumiere' src="/sources/04-imgs/lumière3.png" alt="image-lumière">
+        <ul>
+            <img class="icone-home" src='sources/04-imgs/maison.png' alt="icone-maison" >
+            <li>
+                <a href="/sources/03-views/home.html">Home</a>
+            </li>
+            
+            <img class='icone-serpent' src="sources/04-imgs/serpent_icone.png" alt="icone-alt">
+            <li>
+                <a href="">Jeu cv</a>
+            </li>
+            
+            <img class="icone-cv" src="sources/04-imgs/cv.jpg" alt="*">
+            <li>
+                <a href="sources/04-imgs/cv.pdf" target="_blank" rel="noopener noreferrer">
+                
+                    Cv only</i></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="area-container">
+            
+            <blockquote id='blockquote' class='blockquote'>
+
+                    <h2 id='titre-ce-que-jaime'>Ce que j'apprécie?</h2>
+                
+                <section id="ce-que-jaime" class="ce-que-jaime">
+
+                    <img src="sources/04-imgs/tableau/apple.png" alt="*" class="icone 1">
+                    <img src="sources/04-imgs/tableau/avocado.png" alt="*" class="icone 2">
+                    <img src="sources/04-imgs/tableau/html.png" alt="*" class="icone 3">
+                    <img src="sources/04-imgs/tableau/cherries.png" alt="*" class="icone 4">
+                    
+                    
+                   
+                    <img src="sources/04-imgs/tableau/grapes.png" alt="*" class="icone 5">
+                    <img src="sources/04-imgs/tableau/css.png" alt="1" class="icone 6">
+                    
+                    
+                    
+                    <img src="sources/04-imgs/tableau/nut.png" alt="*" class="icone 7">
+                    <img src="sources/04-imgs/tableau/bananes.jpg" alt="*" class="icone 8">
+                    <img src="sources/04-imgs/tableau/sublime.png" alt="*" class="icone 9">
+                    <img src="sources/04-imgs//tableau/pineapple.png" alt="*" class="icone 10">
+                    <img src="sources/04-imgs/tableau/respons.png" alt="*" class="icone 11">
+                    <img src="sources/04-imgs/tableau/strawberry.png" alt="*" class="icone 12">
+                    <img src="sources/04-imgs/tableau/canard-Js.png" alt="*" class="icone 13">
+                    <img src="sources/04-imgs/tableau/watermelon.png" alt="*" class="icone ">
+                    <img src="sources/04-imgs/tableau/sql.jpg" alt="*" class="icone 14">
+                    <img src="sources/04-imgs/tableau/mongo.png" alt="*" class="icone 15">
+                    <img src="sources/04-imgs/tableau/node.png" alt="*" class="icone 16">
+                    <img src="sources/04-imgs/tableau/orange.png" alt="*" class="icone 17">
+                    <img src="sources/04-imgs/tableau/react.jpg" alt="*" class="icone 18">
+                    <img src="sources/04-imgs/tableau/snake.jpg" alt="*" class="icone 19">
+                    <img src="sources/04-imgs/tableau/graduation.png" alt="*" class="icone 20">
+                    
+                    
+
+
+                </section>
+                
+                 
+
+                <h1>Snake</h1>
+                
+            </blockquote >
+
+            <section class="tableau-de-bord">
+                
+                <aside class="aside-gauche">
+
+                    <section  class="section-score">
+                        <p id='class="section-score-p'class="section-score-p"> Score </br>
+                            <span id='score'> 0 </span>
+                        </p>
+                        <p id='p-score-100pts' class='p-score-100pts'>100 pts! Bravo, mon cv est téléchargeable en bas :) Rien de pressé, la partie n'est pas finie!</p>
+                    </section>
+
+                </aside>
+
+                <section id="area" class="area"></section>
+
+                <aside class="aside-droit">
+                    <article class="regles">
+                            <p class="p1"> Plus besoin de vous présenter le célèbre jeu du Snake!</p> </br>
+                            <p class="p2"> Je vais simplement vous rappeler que le but du jeu est de nourrir le serpent en le faisant manger des fruits/encas afin de découvrir ce qui se cache derrière ma personne.</p> </br>
+                            <p class="p3"> Et oui, un serpent mange des fruits!</p> </br>
+                            <p class="p4"> À chaque fruit englouti par celui-ci, il grandit et devient bizarrement de plus en plus friant et donc désireux d'en manger toujours plus!</p> </br>
+                            <p class="p5"> Arriverez-vous à le dompter malgré sa faim grandissante et surtout sa taille?!</p> </br>
+                            <p class="p6"> En effet, le but étant que le serpent atteigne une taille suffisante pour pouvoir passer le pont qui vous mènera à moi ;) !</p>
+                    </article>
+                </aside>
+        
+
+            </section>
+            
+            <button id="button">Play</button>
+        
+            <footer>
+                <p class="download_cv" id='download_cv'>
+                    <a href="sources/04-imgs/cv.pdf" target="_blank" download="cv">
+                        Télécharger le cv
+                    </a>
+                </p>
+            </footer>
+
+            
+        </section>
+
+       
+    </main>
+</body>
+<script src="sources/01-js/script.js"></script>
+<script>
+    
+// const windowHeight = window.innerHeight; 
+// const windowWidth = window.innerWidth;
+
+// const leBody = window.document.body;
+
+// console.log( leBody.style.height = windowHeight );
+
+// console.log( leBody.style.width = windowWidth );
+    
+    </script>
+
+</html>
